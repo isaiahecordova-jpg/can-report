@@ -1,5 +1,5 @@
 /* CAN Report service worker: precache the app shell, serve cache-first, refresh in the background. */
-const CACHE = "can-report-3a219f745580";
+const CACHE = "can-report-e44d38439310";
 const ASSETS = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
